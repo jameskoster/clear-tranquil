@@ -1,0 +1,456 @@
+@import '../highwind/style.css';
+/*
+Theme Name:     Clear Tranquil
+Description:    Clear Tranquil is a Highwind Child Theme with a very strong focus on blogging / readability. Everything has been stripped back allowing your content to do the talking.
+Author:         James Koster
+Template:       highwind
+Version:        1.0
+*/
+/**
+ * GRID.LESS
+ * Based on semanticgrid.gs
+ */
+.icon_button {
+  text-indent: -999em;
+  position: relative;
+  display: block;
+  padding: 0;
+  height: 2.369em;
+  width: 2.369em;
+  font-size: 1em;
+  font-weight: normal;
+}
+.icon_button:after {
+  font-family: "FontAwesome";
+  content: "\f118";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  text-indent: 0;
+  line-height: 2.369;
+}
+.icon_date {
+  display: inline;
+}
+.icon_date:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f133";
+}
+.icon_external {
+  display: inline-block;
+}
+.icon_external:after {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  text-align: right;
+  line-height: 1;
+  content: "\f179";
+  content: "\f08e";
+}
+.icon_video:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f03d";
+}
+.icon_status:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f0e7";
+}
+.icon_audio:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f025";
+}
+.icon_comment:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f075";
+}
+.icon_link:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f0c1";
+}
+.icon_folder:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f07b";
+}
+.icon_tag:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f02b";
+}
+.icon_post:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f0f6";
+}
+.icon_edit:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f040";
+}
+.icon_archive:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f115";
+}
+.icon_category:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f114";
+}
+.icon_page:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f0f6";
+}
+.icon_comment:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f0e5";
+}
+.icon_post:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f016";
+}
+.icon_user:before {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  speak: none;
+  width: 1.5em;
+  display: inline-block;
+  line-height: 1;
+  content: "\f179";
+  content: "\f007";
+}
+@-webkit-keyframes buttonshadow {
+  0% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+@-moz-keyframes buttonshadow {
+  0% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+@-o-keyframes buttonshadow {
+  0% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+@keyframes buttonshadow {
+  0% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -0.238em 0 0 rgba(0, 0, 0, 0.05), inset 0 -5em 0 0 rgba(0, 0, 0, 0.1);
+  }
+}
+body {
+  font-family: "Gentium Basic", "Cambria", "Georgia", serif;
+  font-size: 1.333em;
+  color: #85868a;
+  line-height: 1.555;
+}
+body,
+.header,
+.main-nav,
+.footer {
+  background-color: #f8f8f9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+.omega,
+.psi,
+.alpha,
+.beta,
+.gamma,
+.delta {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+.main-nav {
+  font-family: 'Noto Sans';
+}
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header .site-intro .avatar {
+  margin: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.header .site-title,
+.header .site-description {
+  text-shadow: none;
+  text-align: left;
+}
+.header .site-description {
+  font-family: "Gentium Basic", serif;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.site-title,
+.site-description {
+  color: #444854;
+}
+.main-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.comment-author {
+  font-family: "Noto Sans", sans-serif;
+}
+.comments .comment-author .comment-meta {
+  font-size: .75em;
+}
+.post-meta {
+  font-family: "Noto Sans", sans-serif;
+  font-size: .75em;
+  font-weight: 700;
+}
+.post-date {
+  font-family: "Noto Sans", sans-serif;
+  font-size: .75em;
+}
+input[type="submit"],
+.button,
+input[type="button"],
+.navigation-post a,
+.navigation-paging a,
+input[type="submit"]:hover,
+.button:hover,
+input[type="button"]:hover,
+.navigation-post a:hover,
+.navigation-paging a:hover {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: .844em;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input.input-text,
+textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.comments .bypostauthor .comment-content,
+.comments .comment-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navigation-post,
+.navigation-paging {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 1px 0;
+  margin-left: -999em;
+  margin-right: -999em;
+  padding: 1.5em 999em;
+}
+.comments-title {
+  margin-bottom: 1.5em;
+}
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 1.5em;
+  }
+  .inner-wrap,
+  .main-nav .highwind-navigation {
+    max-width: 35.409em;
+  }
+  .content {
+    display: inline;
+    float: left;
+    width: 93.85594477520422%;
+    margin-left: 3.072027612397888%;
+    margin-right: 3.072027612397888%;
+    *width: 93.8038614418709%;
+    *margin-left: 3.0199442790645543%;
+    *margin-right: 3.0199442790645543%;
+  }
+  .main-nav .highwind-navigation ul {
+    font-size: .844em;
+  }
+  .page-title,
+  .site-title {
+    font-weight: 700;
+    font-size: 2.369em;
+  }
+  .post-title {
+    font-size: 1.777em;
+    font-weight: 700;
+  }
+  img.alignleft,
+  .alignleft {
+    margin-left: -2.665em;
+  }
+  img.alignright,
+  .alignright {
+    margin-right: -2.665em;
+  }
+  .csstransforms3d.csstransitions .background-contrast .main-nav {
+    left: 0;
+  }
+  .background-contrast .site-intro {
+    padding: 0 3.157em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .background-contrast .main-nav ul.menu {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  body {
+    font-size: 1.777em;
+  }
+}
